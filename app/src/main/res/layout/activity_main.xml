@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="10dp"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#9E77ED"
+        android:backgroundTint="#73871EA3"
+        android:fontFamily="@font/aclonica"
+        android:text="Tic Tac Toe"
+        android:textColor="#FB0861"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/texttitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/text_player1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#73E5B1F3"
+            android:backgroundTint="#E7C1F1"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Player - 1 score"
+            android:textAlignment="center"
+            android:textColor="#2C3883"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_player2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/text_player1"
+            android:background="#73E5B1F3"
+            android:backgroundTint="#E7C1F1"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Player - 2 score"
+            android:textAlignment="center"
+            android:textColor="#2C3883"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/score_player1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_player1"
+            android:background="#73DFA8ED"
+            android:backgroundTint="#9743AE"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#2C3883"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/score_player2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_player2"
+            android:layout_toRightOf="@id/text_player1"
+            android:background="#73DFA8ED"
+            android:backgroundTint="#9743AE"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#2C3883"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/layout_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/relative_layout"
+        >
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="26dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.56dp"/>
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="26dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.56dp"/>
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="26dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.56dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="26dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.56dp"/>
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="26dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.56dp"/>
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="26dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.56dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="26dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.56dp"/>
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="26dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.56dp"/>
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="26dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.56dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#E9E9EA"
+        android:backgroundTint="#F1C7D6"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Status"
+        android:textColor="#040303"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_play_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textStatus"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#CC2360"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Play Again"
+        android:textSize="26dp" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_play_again"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#12B6CA"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Reset Game"
+        android:textSize="26dp" />
+
+
+
+</RelativeLayout>
